@@ -96,7 +96,7 @@ video {
     width: 100%;
     min-height: 35rem;
     height: 100%;
-    background-color: rgba(0, 97, 178, .3);
+    background-color: rgba(0, 0, 0, .3);
     transform: skewY(4deg);
     transform-origin: bottom right;
 }
@@ -129,7 +129,7 @@ video {
 
 @media (max-width: 768px) {
     .masthead .masthead-bg {
-        background-color: rgba(0, 97, 178, 0.5);
+        background-color: rgba(0, 0, 0, 0.8);
     }
 }
 
@@ -183,7 +183,7 @@ video {
 .social-icons ul>li>a {
     display: block;
     color: white;
-    background-color: rgba(0, 97, 178, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 100%;
     font-size: 2rem;
     line-height: 4rem;
@@ -233,6 +233,7 @@ video {
 .btn-primary {
     background-color: #ffffff;
     color: #0061b2;
+    border-color: #fff;
 }
 
 .btn-primary:active,
@@ -404,5 +405,55 @@ video {
 @media (max-width:768px) {
     #fullScreen {
         display: none;
+    }
+}
+
+@keyframes BlackWhite {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: white;
+    }
+
+    51% {
+        color: #080808;
+    }
+
+    100% {
+        color: #080808;
+    }
+}
+
+@-webkit-keyframes BlackWhite {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: white;
+    }
+
+    51% {
+        color: #080808;
+    }
+
+    100% {
+        color: #080808;
+    }
+}
+
+#colorChange h5 {
+    color: #080808;
+    -webkit-animation: BlackWhite 15s ease-in;
+    animation: BlackWhite 15s ease-in;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+}
+
+@media (max-width:768px) {
+    .push2 {
+        margin-bottom: 2rem;
     }
 }
