@@ -40,6 +40,16 @@ a:hover {
     text-decoration: none;
 }
 
+@media (max-width:768px) {
+
+    a:hover,
+    a:focus,
+    a:active {
+        color: #0061b2;
+        text-decoration: none;
+    }
+}
+
 video {
     position: fixed;
     top: 50%;
@@ -244,8 +254,9 @@ video {
 }
 
 .btn-secondary {
-    background-color: #cd9557;
-    border-color: #cd9557;
+    background-color: #0061b2;
+    border-color: #0061b2;
+    color: #ffffff
 }
 
 .btn-secondary:active,

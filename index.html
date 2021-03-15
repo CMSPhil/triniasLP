@@ -53,8 +53,10 @@
             <div class="minVideo">
               <a data-toggle="modal" data-target="#CT3"><button type="button" class="btn-lg btn-primary">Watch the
                   Video</button> </a><br><br>
+                  <a data-toggle="modal" data-target="#bolus"><button type="button" class="btn-lg btn-secondary">Bolus Chase
+                    Video</button> </a><br><br>
               <h4>Contact Crystal Weiser</h4>
-              <a href="tel:434.238.2147">434.238.2147</a><br>
+              <a href="tel:4342382147">434.238.2147</a><br>
               <a
                 href="mailto:cweiser@cmsimaging.com?subject=I'd like some more information on the Shimadzu Trinias unity Edition">cweiser@cmsimaging.com</a>
             </div>
@@ -64,15 +66,22 @@
     </div>
   </div>
   <!-- Modal -->
-  <div id="CT3" class="modal fade" role="dialog">
+  <div id="CT3" class="modal-regular fade" role="dialog">
     <div class="modal-dialog">
       <!-- Modal content-->
-      <div class="modal-content">
+      <div class="modal-content"><div class="modal-header">
+        <h5 class="modal-title" id="bolusModalLabel">Shimadzu Trinias <i><strong>unity</strong></i> Edition</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
         <div id="responsiveVideo">
           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/N1NmXct3a5w" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
+      </div>
         <div class="modal-footer">
           <button type="button" class="btn-blue btn-xs" data-dismiss="modal">Close</button>
         </div>
@@ -80,8 +89,29 @@
     </div>
   </div>
   <!-- End Modal -->
+  <!-- Modal content -->
+  <div class="modal-regular fade" id="bolus" tabindex="-1" aria-labelledby="bolusModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bolusModalLabel">Shimadzu Trinias RSM Bolus Chase</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="videoWrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/EMXvxYAF_sE?listType=playlist&list=PLEMXvxYAF_sE&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-secondary btn-sm" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="social-icons" id="fullScreen">
-    <ul class="list-unstyled text-center mb-0">
+    <ul class="list-unstyled text-center mb-5">
       <li class="list-unstyled-item" id="showMe">
         <picture>
           <source srcset="img/cmsLogo.webp" type="image/webp">
@@ -93,7 +123,7 @@
         <picture>
           <source srcset=" img/Crystal_Weiser.webp" type="image/webp">
           <source srcset="img/Crystal_Weiser.jpg" type="image/jpg">
-          <img src="img/Crystal_Weiser.jpg" alt="Crystal Weiser" class="bd-placeholder-img2 rounded-circle rep"
+          <img src="img/Crystal_Weiser.jpg" alt="TomPompeii" class="bd-placeholder-img2 rounded-circle rep"
             style="max-width:6rem">
         </picture>
         <div id="colorChange">
@@ -101,7 +131,7 @@
         </div>
       </li>
       <li class="list-unstyled-item socialIcons">
-        <a href="tel:434.238.2147">
+        <a href="tel:4342382147">
           <i class="fas fa-phone"></i>
         </a>
       </li>
@@ -111,7 +141,49 @@
           <i class="fas fa-envelope"></i>
         </a>
       </li>
+      <li class="list-unstyled-item socialIcons">
+      <a data-toggle="modal" data-target="#bolusModal">
+        <i class="fas fa-video" style="color:white"></i>
+        <div id="colorChange">
+        <h5 style="font-size:small;">Bolus Chase Video</h5>
+      </div>
+      </a>
+    </li>
     </ul>
+<style>
+  .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+<div class="modal fade" id="bolusModal" tabindex="-1" aria-labelledby="bolusModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bolusModalLabel">Shimadzu Trinias RSM Bolus Chase</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="videoWrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EMXvxYAF_sE?listType=playlist&list=PLEMXvxYAF_sE&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 
 
